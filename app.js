@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var login = require('./routes/login');
+// var login = require('./routes/login');
 var expressLayout = require('express-ejs-layouts');
 // var mobil = require('./models/data');
 
@@ -25,9 +25,9 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+// app.use('/welcome', indexRouter);
 app.use('/users', usersRouter);
-app.use('/login', login);
+app.use('/', indexRouter);
 
 app.use('/public/', express.static('./public'));
 

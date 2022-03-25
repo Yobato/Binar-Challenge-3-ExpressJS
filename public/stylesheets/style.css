@@ -210,6 +210,7 @@ span.list-car {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 2;
 }
 
 .navbar {
@@ -235,6 +236,7 @@ span.list-car {
   height: 100vh;
   color: white !important;
   font-size: 12px;
+  z-index: 3;
 }
 
 .main-menu a,
@@ -288,7 +290,7 @@ span.list-car {
 
 /* ADD NEW CAR BEGIN */
 .sub-tree i {
-  /* position: relative; */
+  position: relative;
   top: 5px;
 }
 
@@ -492,6 +494,7 @@ a.page-link {
   background: #CFD4ED;
   color: #0D28A6;
   border-color: #0D28A6;
+  z-index: 1;
 }
 
 .form-select {

@@ -5,18 +5,17 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', {
-    title: 'Express',
+  res.render("login", {
+    title: "Login",
+    layout: false
   });
 });
 
 router.get('/dashboard', function (req, res, next) {
-  var items = ['node.js', 'expressjs', 'ejs', 'javascript', 'bootstarp'];
   res.render('dashboardTableHome.ejs', {
     title: 'DASHBOARD',
     listCars: listCar,
     orders: order,
-    list: items
   });
 });
 
